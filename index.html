@@ -1,35 +1,47 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="JavaScript Test for XYBooster" />
-        <title>Om's Pokedex</title>
-        <link rel="stylesheet" href="styles.css" />
-      </head>
-<body>
-<header>
-    <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
-    <h1>Omar's Tiny Pokedex</h1>
-</header>
-    <main>
-        <section role="region" aria-labelledby="pokemon">
-            <div class = "pokemon zone">
-                <h1 id="initial"> Espera 30 segundos para mostrar un Pokemón al azar.</h1>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>The New Pokedex</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href=".">The New Pokedex by Omar Rojas</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <section>
+            <div class="container px-4 px-lg-5 text-light">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-6">
+                        <h1 class="mt-5">Pokémon</h1>
+                        <p>(Japanese: ポケモン), shortened from Pocket Monster (Japanese: ポケットモンスター, Hepburn: Poketto Monsutaa), are a group of fantastical monsters who are the central focus and main feature of the Pokémon franchise. There are currently 1,025 documented species of Pokémon. </p>
+                        <button type="button submit" class="btn btn-primary randButton" id="random">Show Pokémon</button>
+                    </div>
+                        <div class = "mt-5 pokemon zone">
+                            <h4 id="initial"> Wait 30 seconds to see a random Pokémon.</h4>
+                        </div>
+                        <div class = "search zone">
+                            <div class= "searchBar"  style="display: none"> <!--Barra oculta. Aquí es donde se ingresa el valor para buscar al Pokémon-->
+                                <input id="userinput" class = "searchTerm" type="text" placeholder="enter pokemon name or id..">
+                            </div> 
+                        </div>
+                </div>
             </div>
         </section>
-        <section role="region" aria-labelledby="pokemon-fetcher">
-            <div class = "search zone">
-                <button type= "submit" class="randButton" id="random"> Mostrar Pokemón </button>
-                <div class= "searchBar"  style="display: none">
-                    <input id="userinput" class = "searchTerm" type="text" placeholder="enter pokemon name or id..">
-                </div> 
-            </div>
-        </section>
-    </main>
-<footer>    
-  <p>Hecho con amor por Omar</p>
-</footer>
-	<script type="text/javascript" src = "scripts.js"></script>
-</body>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
