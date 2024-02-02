@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="JavaScript Test for XYBooster" />
+        <title>Om's Pokedex</title>
+        <link rel="stylesheet" href="styles.css" />
+      </head>
+<body>
+<header>
+    <img id="logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg">
+    <h1>Omar's Tiny Pokedex</h1>
+</header>
+    <main>
+        <section role="region" aria-labelledby="pokemon">
+            <div class = "pokemon zone">
+                <h1 id="initial"> Espera 30 segundos para mostrar un Pokemón al azar.</h1>
+            </div>
+        </section>
+        <section role="region" aria-labelledby="pokemon-fetcher">
+            <div class = "search zone">
+                <button type= "submit" class="randButton" id="random"> Mostrar Pokemón </button>
+                <div class= "searchBar"  style="display: none">
+                    <input id="userinput" class = "searchTerm" type="text" placeholder="enter pokemon name or id..">
+                </div> 
+            </div>
+        </section>
+    </main>
+<footer>    
+  <p>Hecho con amor por Omar</p>
+</footer>
+	<script type="text/javascript" src = "scripts.js"></script>
+</body>
+</html>
